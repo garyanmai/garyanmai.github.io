@@ -10,7 +10,7 @@
             text-align: center;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
+            background-color: #f8bbd0; /* Light pink background color */
         }
         h1 {
             margin-top: 20px;
@@ -19,7 +19,7 @@
             width: 150px;
             height: 150px;
             background-color: #ccc;
-            margin-top: 20px;
+            margin: 20px auto;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -57,51 +57,37 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
+        .button-container {
+            display: flex;
+            justify-content: space-around;
+            gap: 10px; /* Optional: Adjusts spacing between buttons */
+            margin: 20px 0;
+        }
         .button {
             padding: 10px 20px;
-            margin: 10px;
             border: none;
             border-radius: 5px;
             color: #fff;
             cursor: pointer;
             text-decoration: none;
+            background: linear-gradient(45deg, #ff6f61, #ff9a9e); /* Pink gradient */
+            transition: background 0.3s ease;
+        }
+        .button:hover {
+            background: linear-gradient(45deg, #ff9a9e, #ff6f61); /* Light pink gradient on hover */
         }
         .inactive {
-            background-color: #ccc;
+            background: linear-gradient(45deg, #ccc, #e0e0e0); /* Gray gradient */
             cursor: not-allowed;
         }
         .inactive:hover {
             cursor: not-allowed;
         }
         .linkedin {
-            background-color: #0077b5;
+            background: linear-gradient(45deg, #0077b5, #0077b5); /* LinkedIn color */
         }
         .github {
-            background-color: #333;
-        }
-        .tooltip {
-            position: relative;
-            display: inline-block;
-        }
-        .tooltip .tooltiptext {
-            visibility: hidden;
-            width: 120px;
-            background-color: #555;
-            color: #fff;
-            text-align: center;
-            border-radius: 5px;
-            padding: 5px 0;
-            position: absolute;
-            z-index: 1;
-            bottom: 125%; /* Position the tooltip above the button */
-            left: 50%;
-            margin-left: -60px;
-            opacity: 0;
-            transition: opacity 0.3s;
-        }
-        .tooltip:hover .tooltiptext {
-            visibility: visible;
-            opacity: 1;
+            background: linear-gradient(45deg, #333, #333); /* GitHub color */
         }
     </style>
 </head>
@@ -115,11 +101,8 @@
             Profile Picture
         </div>
         <p>My name is Carmen Mai and I am currently a senior majoring in CIS and double-minoring in CS and Cybersecurity. A fun fact about me is that I am currently at my 444th-day streak on Duolingo for Japanese! (as I am writing this on 8/7/24)</p>
-        <div class="tooltip">
+        <div class="button-container">
             <button class="button inactive">My Resume</button>
-            <span class="tooltiptext">Coming Soon</span>
-        </div>
-        <div>
             <a href="https://www.linkedin.com/in/garyanmai" class="button linkedin">My Linkedin</a>
             <a href="https://github.com/garyanmai" class="button github">My Github</a>
         </div>
