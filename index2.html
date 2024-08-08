@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carmen Mai's Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f8bbd0; /* Light pink background color */
+        }
+        h1 {
+            margin-top: 20px;
+        }
+        .profile-pic-placeholder {
+            width: 150px;
+            height: 150px;
+            background-color: #ccc;
+            margin: 20px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+            font-size: 16px;
+            border: 2px solid #999;
+            position: relative;
+            border-radius: 5px;
+        }
+        .profile-pic-placeholder .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%; /* Position the tooltip above the square */
+            left: 50%;
+            margin-left: -60px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .profile-pic-placeholder:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-around;
+            gap: 10px; /* Optional: Adjusts spacing between buttons */
+            margin: 20px 0;
+        }
+        .button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+            text-decoration: none;
+            background: linear-gradient(45deg, #ff6f61, #ff9a9e); /* Pink gradient */
+            transition: background 0.3s ease;
+        }
+        .button:hover {
+            background: linear-gradient(45deg, #ff9a9e, #ff6f61); /* Light pink gradient on hover */
+        }
+        .inactive {
+            background: linear-gradient(45deg, #ccc, #e0e0e0); /* Gray gradient */
+            cursor: not-allowed;
+        }
+        .inactive:hover {
+            cursor: not-allowed;
+        }
+        .linkedin {
+            background: linear-gradient(45deg, #0077b5, #0077b5); /* LinkedIn color */
+        }
+        .github {
+            background: linear-gradient(45deg, #333, #333); /* GitHub color */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hello, Welcome to my portfolio!</h1>
+    </header>
+    <div class="container">
+        <div class="profile-pic-placeholder">
+            <span class="tooltiptext">Coming Soon!</span>
+            Profile Picture
+        </div>
+        <p>My name is Carmen Mai and I am currently a senior majoring in CIS and double-minoring in CS and Cybersecurity. A fun fact about me is that I am currently at my 444th-day streak on Duolingo for Japanese! (as I am writing this on 8/7/24)</p>
+        <div class="button-container">
+            <button class="button inactive">My Resume</button>
+            <a href="https://www.linkedin.com/in/garyanmai" class="button linkedin">My Linkedin</a>
+            <a href="https://github.com/garyanmai" class="button github">My Github</a>
+        </div>
+    </div>
+</body>
+</html>
