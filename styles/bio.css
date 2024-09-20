@@ -1,0 +1,304 @@
+.bio {
+    height: 230px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px;
+    margin-left: 250px;
+    margin-right: 250px;
+    /*background-color: lightblue;*/
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(228, 228, 228);
+  }
+
+.profile-picture {
+    margin-left: -10px;
+    padding-right: 10px;
+    width: 500px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-picture img {
+    width: 45%;
+    height: auto;
+    border-radius: 200px;
+}
+
+.bio-info {
+    height: 180px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /*background-color: lightpink;*/
+}
+
+.bio-container-1 {
+    /*background-color: lightsalmon;*/
+    height: 60px;
+    display: flex;
+}
+
+.bio-container-1 .my-name-div {
+    /*background-color: lightpink;*/
+    width: 110px;
+    padding-right: 25px;
+
+}
+
+.bio-info .my-name {
+    margin-top: 30px;
+    height:25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.bio-container-1 .linkedin-button-div {
+    /*background-color: lightblue;*/
+    align-items: center;
+    justify-content: center;
+    padding-top: 32px;
+    padding-right: 10px;
+    margin-right: 0px;
+    
+}
+
+.bio-container-1 .linkedin-button {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    border-width: 0px;
+    border-radius: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 14px;
+    padding-right: 14px;
+    background-color: rgb(239, 239, 239);
+
+}
+
+.linkedin-button:hover {
+    background-color: lightblue;
+    cursor: pointer;
+}
+
+.bio-container-1 .github-button-div {
+    /*background-color: lightpink;*/
+    padding-top: 32px;
+    padding-right: 10px;
+
+}
+
+.bio-container-1 .github-button {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    border-width: 0px;
+    border-radius: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 14px;
+    padding-right: 14px;
+    background-color: rgb(239, 239, 239);
+
+}
+
+.github-button:hover {
+    background-color: rgb(171, 228, 171);
+    cursor: pointer;
+}
+
+.bio-container-1 .resume-button-div {
+    /*background-color: lightblue;*/
+    padding-top: 26px;
+    padding-right: 5px;
+    position: relative;
+
+}
+
+.bio-container-1 .resume-button {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    border-width: 0px;
+    border-radius: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 14px;
+    padding-right: 14px;
+    background-color: rgb(239, 239, 239);
+
+}
+
+.resume-button:hover {
+    background-color: lightpink;
+    cursor: pointer;
+}
+
+.resume-tooltip-text {
+    background-color: rgb(239, 239, 239);
+    position: absolute;
+    z-index: 1;
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    left: -20%; /* positions left of the link */
+    bottom: -60%; /* positions below the link */ 
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.15s;
+
+}
+
+.resume-button-div:hover .resume-tooltip-text{
+    visibility: visible;
+    opacity: 0.9;
+}
+
+.bio-container-1 .dots-div {
+    /*background-color: lightpink;*/
+    padding-top: 33px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 25px;
+
+}
+
+.bio-container-1 .dots-image {
+    width: 100%;
+    height: auto;
+}
+
+.bio-container-2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    /*background-color: lightgoldenrodyellow;*/
+    height: 60px;
+    display: flex;
+}
+
+.bio-container-2 .projects-div {
+    display: flex;
+    /*background-color: lightblue;*/
+    padding-top: 20px;
+    padding-right: 40px;
+    position: relative;
+}
+
+.projects-div:hover {
+    cursor: crosshair;
+}
+
+.projects-div:hover .projects-tooltip-text {
+    visibility: visible;
+    opacity: 0.9;
+}
+
+.projects-tooltip-text {
+    background-color: rgb(239, 239, 239);
+    position: absolute;
+    z-index: 1;
+    width: 200px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    left: -70%; /* positions left of the link */
+    bottom: -225%; /* positions below the link */ 
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.15s;
+}
+
+.bio-container-2 .education-div {
+    display: flex;
+    /*background-color: lightpink;*/
+    padding-top: 20px;
+    padding-right: 40px;
+    position: relative;
+}
+
+.education-div:hover {
+    cursor: crosshair;
+}
+
+.education-div:hover .education-tooltip-text {
+    visibility: visible;
+    opacity: 0.9;
+}
+
+.education-tooltip-text {
+    background-color: rgb(239, 239, 239);
+    position: absolute;
+    z-index: 1;
+    width: 200px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    left: -70%; /* positions left of the link */
+    bottom: -130%; /* positions below the link */ 
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.15s;
+}
+
+.bio-container-2 .certificates-div {
+    display: flex;
+    /*background-color: lightblue;*/
+    padding-top: 20px;
+    padding-right: 40px;
+    position: relative;
+}
+
+.certificates-div:hover {
+    cursor: crosshair;
+}
+
+.certificates-div:hover .certificates-tooltip-text {
+    visibility: visible;
+    opacity: 0.9;
+}
+
+.certificates-tooltip-text {
+    background-color: rgb(239, 239, 239);
+    position: absolute;
+    z-index: 1;
+    width: 250px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    left: -50%; /* positions left of the link */
+    bottom: -90%; /* positions below the link */ 
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.15s;
+}
+
+
+.bio-container-3 {
+    /*background-color: lightsalmon;*/
+    height: 100px;
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    padding-top: 15px;
+}
+
+.dots-image:hover {
+    cursor:not-allowed;
+}
